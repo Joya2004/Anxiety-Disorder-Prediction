@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Psychometric Test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Psychometric Test</h1>
+            <h2>Please answer the following questions:</h2>
+            <form action="/res" method="POST">
+                <label for="gender">1. What is your gender?</label><br>
+                <input type="radio" name="gender" value="1" required> Male<br>
+                <input type="radio" name="gender" value="0"> Female<br><br>
+
+                <!-- <label for="bmi">2. What is your Body Mass Index (BMI) range(0 to 55)</label><br>
+                <input type="number" name="bmi" min="0" max="55" step="0.1" required><br><br> -->
+<!-- 
+                <label for="who_bmi">3. According to the WHO classification, what is your BMI category?</label><br>
+                <select name="who_bmi" required>
+                    <option value="0">Class 1 Obesity</option>
+                    <option value="1">Normal</option>
+                    <option value="2">Not available</option>
+                    <option value="3">Overweight</option>
+                </select><br><br> -->
+<!-- 
+                <label for="phq_score">4. What is your PHQ-9 score? range(0 to 27)</label><br>
+                <input type="number" name="phq_score" min="0" max="27" required><br><br> -->
+
+                <!-- <label for="depressiveness">5. How often do you feel depressed?</label><br>
+                <input type="radio" name="depressiveness" value="0" required> Not at all<br>
+                <input type="radio" name="depressiveness" value="1"> Several days<br>
+                <input type="radio" name="depressiveness" value="2"> Nearly every day<br><br> -->
+
+                <!--<label for="gad_score">2. What is your GAD-7 score? range(0 to 21)</label><br>
+                <input type="number" name="gad_score" min="0" max="21" required><br><br> -->
+
+                <label for="sleepiness">3. How often do you feel sleepy during the day?</label><br>
+                <input type="radio" name="sleepiness" value="0" required> Not at all<br>
+                <input type="radio" name="sleepiness" value="1"> A little<br>
+                <input type="radio" name="sleepiness" value="2"> Very much<br><br>
+
+                <label for="epworth_score">4. What is your Epworth Sleepiness Score? range(0 to 24)</label><br>
+                <input type="number" name="epworth_score" min="0" max="24" required><br><br>
+
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
