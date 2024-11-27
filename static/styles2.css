@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fdf7; /* Light green background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4CAF50; /* Green underline */
+}
+
+h1 {
+    font-size: 28px;
+    color: #4CAF50; /* Dark green */
+    margin-bottom: 10px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+.results-box {
+    margin-bottom: 20px;
+    background-color: #e8f5e9; /* Light green background for results */
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#advice-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Psychometric Test</title>
 </head>
 <body>
@@ -38,12 +38,12 @@
                 <!--<label for="gad_score">2. What is your GAD-7 score? range(0 to 21)</label><br>
                 <input type="number" name="gad_score" min="0" max="21" required><br><br> -->
 
-                <label for="sleepiness">3. How often do you feel sleepy during the day?</label><br>
+                <label for="sleepiness">2. How often do you feel sleepy during the day?</label><br>
                 <input type="radio" name="sleepiness" value="0" required> Not at all<br>
                 <input type="radio" name="sleepiness" value="1"> A little<br>
                 <input type="radio" name="sleepiness" value="2"> Very much<br><br>
 
-                <label for="epworth_score">4. What is your Epworth Sleepiness Score? range(0 to 24)</label><br>
+                <label for="epworth_score">3. What is your Epworth Sleepiness Score? range(0 to 24)</label><br>
                 <input type="number" name="epworth_score" min="0" max="24" required><br><br>
 
                 <button type="submit" class="btn btn-danger">Submit</button>

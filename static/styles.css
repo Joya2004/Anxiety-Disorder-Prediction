@@ -1,0 +1,153 @@
+/* General Styles for all pages */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Dark green background for the header */
+    color: white;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Title Styles (Page Title in Body) */
+.page-title {
+    font-size: 36px; /* Larger font size for the page title */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase; /* Makes the text all uppercase */
+    letter-spacing: 2px; /* Adds space between letters */
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(90deg, #4CAF50, #81c784); /* Gradient background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+/* Subheading Styles */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Question Box Styles (for GAD-7 and PHQ-9) */
+.question {
+    background-color: #e0f7e0; /* Light green background */
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Buttons Styles */
+.button, .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.button:hover, .submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Result Display Styles */
+#result {
+    text-align: center;
+    font-size: 20px;
+    color: #2c7c5a; /* Dark green */
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Image Section (for the Anxiety Disorder Checker) */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .button, .submit-btn {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .question {
+        padding: 15px;
+    }
+}

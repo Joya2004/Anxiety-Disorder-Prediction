@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+    <title>Anxiety Prediction Results</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anxiety Prediction Results</h1>
+        </header>
+
+        <main>
+            <div class="results-box">
+                <h2>Your Assessment:</h2>
+                <div id="results">
+                    <!-- The Python-generated results will be inserted here -->
+                    {{ results | safe }}
+                </div>
+            </div>
+
+            <div class="advice-box">
+                <p>If you are experiencing severe symptoms, please consider consulting a mental health professional.</p>
+                <a href="/" class="button">Back to Home</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Anxiety Disorder Checker. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
